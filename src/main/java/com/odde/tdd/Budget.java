@@ -10,4 +10,16 @@ public class Budget {
         this.month = month;
         this.amount = amount;
     }
+
+    public YearMonth getMonth() {
+        return month;
+    }
+
+    public long getAmount() {
+        return amount;
+    }
+
+    public double getBudgetInDay() {
+        return 1.0 * this.amount / month.lengthOfMonth();
+    }
 }
